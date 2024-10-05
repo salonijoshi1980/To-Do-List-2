@@ -1,0 +1,138 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(90deg, #7a288a , #ffc5c5);
+}
+
+.container{
+    margin-top: 60px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px ;
+    box-sizing: border-box;
+    border-radius:10px;
+    background-color: whitesmoke;
+    text-align: center;
+    max-width: 500px;
+    max-height: 900px;
+}
+
+header{
+    box-sizing: border-box;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.811);
+    color: white;
+    padding: 30px;
+}
+
+.input-content{
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-color: grey;
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+    max-width: 600px;
+}
+
+input{
+    padding: 19px;
+    border-radius: 5px;
+    border-color: gainsboro;
+    font-size: 20px;
+    color: grey,rgba(0, 0, 0, 0.262);
+}
+
+div button{
+    padding: 10px;
+    margin: 9px;
+    width: 150px;
+    border-radius: 5px;
+    border-style: hidden;
+    background-color: grey;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.btn{
+    padding-left: 10px;
+    margin-left: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+div h3{
+    padding-right: 320px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+div h2{
+    padding: 20px;
+}
+
+.range{
+    width: 90%;
+    height: 10px;
+    margin: 5px 0;
+}
+.task-name{
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.task {
+    margin-bottom: 10px;
+    list-style: none;
+}
+  
+.task-progress {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-top: 10px;
+}
+
+.task-progress[value="100"] {
+    background-color: #0f0; /* green color when task is completed */
+}
+
+.task-progress[value="0"] {
+    background-color: #ccc; /* gray color when task is not completed */
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .container {
+      margin: 20px auto;
+    }
+  }
+  
+@media (max-width: 480px) {
+    .container {
+      margin: 10px auto;
+    }
+    .input-content input[type="text"] {
+      padding: 5px;
+    }
+    .input-content button[type="submit"] {
+      padding: 5px;
+    }
+}
+  
